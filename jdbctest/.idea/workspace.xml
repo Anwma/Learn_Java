@@ -1,47 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74eda983-90de-4e10-9dba-4424b02277a6" name="变更" comment="22-09-03">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/ebd56799-b1bc-43e5-8884-5f56e0b3769a.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/ebd56799-b1bc-43e5-8884-5f56e0b3769a/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/ebd56799-b1bc-43e5-8884-5f56e0b3769a/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/ebd56799-b1bc-43e5-8884-5f56e0b3769a/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/ebd56799-b1bc-43e5-8884-5f56e0b3769a/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_21.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbctest.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/aopalliance-1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/guava-19.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/guice-4.1.0-no_aop.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/hamcrest-core-1.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.inject-1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jcommander-1.72.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/junit-4.13.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-java-8.0.21.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/snakeyaml-1.21.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/testng-7.1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jdbctest/it/src/JdbcDemo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jdbctest/it/src/JdbcUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jdbctest/it/src/Student.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/jdbctest/demo/JdbcTest1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/jdbctest/demo/JdbcTest2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/jdbctest/demo/JdbcTest3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/jdbctest/demo/JdbcTest4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/src/JdbcDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/src/JdbcUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/src/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/demo/JdbcTest1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/demo/JdbcTest2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/demo/JdbcTest3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/demo/JdbcTest4.java" afterDir="false" />
-    </list>
+    <list default="true" id="74eda983-90de-4e10-9dba-4424b02277a6" name="变更" comment="22-09-03" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,7 +15,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -98,7 +58,7 @@
       <recent name="D:\JetbrainsCode\Code_Java\jdbctest\lib" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.JdbcDemo">
+  <component name="RunManager" selected="JUnit.JdbcTest1.queryAll">
     <configuration name="JdbcDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="it.src.JdbcDemo" />
       <module name="jdbctest" />
@@ -178,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JdbcTest1.queryAll" />
         <item itemvalue="应用程序.JdbcDemo" />
         <item itemvalue="JUnit.JdbcTest4.queryOne" />
         <item itemvalue="JUnit.JdbcTest3.insert" />
         <item itemvalue="JUnit.JdbcTest2.queryAll" />
-        <item itemvalue="JUnit.JdbcTest1.queryAll" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +162,23 @@
       <workItem from="1662171305641" duration="76000" />
       <workItem from="1662171620371" duration="327000" />
       <workItem from="1662172132124" duration="82000" />
+      <workItem from="1662173391933" duration="37000" />
     </task>
+    <task id="LOCAL-00001" summary="22-09-03">
+      <created>1662173398123</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662173398123</updated>
+    </task>
+    <task id="LOCAL-00002" summary="22-09-03">
+      <created>1662173406570</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662173406570</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
