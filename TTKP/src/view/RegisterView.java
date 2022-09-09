@@ -1,6 +1,9 @@
 package view;
 
+import service.IUserService;
+import service.impl.UserServiceImpl;
 import util.BackImg;
+import util.Mic;
 import util.MyAudioPlayer;
 
 import javax.swing.*;
@@ -34,7 +37,7 @@ public class RegisterView extends JFrame implements ActionListener {
 
     public RegisterView(){
 
-        //4.按钮
+        //6.按钮
         //注册按钮
         regBtn = new JButton("注册");
         regBtn.setBounds(90,210,80,40);
@@ -47,7 +50,7 @@ public class RegisterView extends JFrame implements ActionListener {
         cancelBtn.addActionListener(this);
         add(cancelBtn);
 
-        //3.输入框
+        //5.输入框
         //账号输入框
         userText = new JTextField();
         userText.setBounds(90,130,100,30);
@@ -58,7 +61,7 @@ public class RegisterView extends JFrame implements ActionListener {
         pwdText.setBounds(90,170,100,30);
         this.add(pwdText);
 
-        //2.title
+        //4.title
         //账号title
         userLabel = new JLabel("账号");
         //设置位置、大小
@@ -77,9 +80,11 @@ public class RegisterView extends JFrame implements ActionListener {
         //3.设置背景音乐
 //        BackMusic backMusic = new BackMusic("sound/game.wav");
         new MyAudioPlayer("sound/game.wav").play();
+//        new Mic("sound/game.mp3");//播放.mp3格式的音乐
+
         //2.设置背景图
         BackImg backImg = new BackImg("image/login.jpg");
-        this.add(backImg);
+        this.add(backImg);//添加组件
 
         //1.显示窗口
         //设置显示窗口的大小
@@ -96,6 +101,8 @@ public class RegisterView extends JFrame implements ActionListener {
     }
 
 
+    //多态
+    IUserService userService = new UserServiceImpl();
     @Override
     public void actionPerformed(ActionEvent e) {
         //判断你点击的哪一个按钮
@@ -107,10 +114,15 @@ public class RegisterView extends JFrame implements ActionListener {
             System.out.println("user= "+user);
             System.out.println("pwd= "+pwd);
 
+            //调用方法并加密密码
+            userService.addUser(user,pwd);
+
             //关闭当前界面
             this.dispose();
 
             //跳转登录界面
+            new LoginView();
+
         }else if(e.getSource()==cancelBtn){//取消按钮
             System.out.println("取消");
             System.exit(0);

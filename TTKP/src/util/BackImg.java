@@ -9,15 +9,15 @@ import java.io.IOException;
 /**
  * 画背景图
  */
-public class BackImg extends JPanel{
-
+public class BackImg extends JPanel {
     Image image;
 
     /**
      * 设置背景图片
+     *
      * @param imageSrc
      */
-    public BackImg(String imageSrc){
+    public BackImg(String imageSrc) {
         try {
             image = ImageIO.read(new File(imageSrc));
         } catch (IOException e) {
@@ -29,6 +29,6 @@ public class BackImg extends JPanel{
     public void paint(Graphics g) {
         super.paint(g);
 
-        g.drawImage(image,0,0,null);
+        g.drawImage(image, 0, 0, null);
     }
 }

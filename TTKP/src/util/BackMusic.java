@@ -9,8 +9,7 @@ import java.net.MalformedURLException;
  * 播放背景音乐
  */
 public class BackMusic {
-
-    public BackMusic(String musicSrc){
+    public BackMusic(String musicSrc) {
 
         File file = new File(musicSrc);
 
@@ -24,5 +23,4 @@ public class BackMusic {
             e.printStackTrace();
         }
     }
-
 }
