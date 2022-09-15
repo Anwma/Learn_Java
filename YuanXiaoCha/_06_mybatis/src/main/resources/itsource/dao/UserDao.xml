@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+    namespace   dao接口的完全限定名
+    id          dao接口对应的方法名
+    resultType  对应实体类的完全限定名
+-->
+<mapper namespace="itsource.dao.UserDao">
+    <!--    List<User> mybatis();-->
+    <select id="mybatis" resultType="itsource.entity.User">
+        select * from student;
+    </select>
+</mapper>
