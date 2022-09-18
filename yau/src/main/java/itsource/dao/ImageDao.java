@@ -3,6 +3,7 @@ package itsource.dao;
 import itsource.entity.Image;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.data.domain.Pageable;
+
 import java.util.List;
 
 /**
@@ -13,6 +14,14 @@ import java.util.List;
  */
 public interface ImageDao {
 
+//    List<Image> queryByImageType(@Param("itype") String itype, @Param("istate") int istate);
+
+    /**
+     * 根据图片类型查询图片信息
+     * @param image
+     * @return
+     */
+    List<Image> queryByImageType(Image image);
     /**
      * 通过ID查询单条数据
      *
@@ -24,8 +33,8 @@ public interface ImageDao {
     /**
      * 查询指定行数据
      *
-     * @param image 查询条件
-     * @param pageable         分页对象
+     * @param image    查询条件
+     * @param pageable 分页对象
      * @return 对象列表
      */
     List<Image> queryAllByLimit(Image image, @Param("pageable") Pageable pageable);

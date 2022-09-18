@@ -1,7 +1,10 @@
 package itsource.controller;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import itsource.entity.Image;
 import itsource.service.ImageService;
+import itsource.utils.ResponseData;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.ResponseEntity;
@@ -17,6 +20,7 @@ import javax.annotation.Resource;
  */
 @RestController
 @RequestMapping("image")
+@Api(tags = "图片接口")
 public class ImageController {
     /**
      * 服务对象
@@ -25,10 +29,26 @@ public class ImageController {
     private ImageService imageService;
 
     /**
+     * 根据图片类型查询图片信息
+     *
+     * @param imageType 图片类型
+     * @return
+     */
+    @ApiOperation(value = "根据图片类型查询图片信息", notes = "根据图片类型查询图片信息")
+    @GetMapping("queryByImageType")
+    public ResponseData queryByImageType(String imageType) {
+
+//        ResponseData responseData = imageService.queryByImageType(imageType);
+//        return responseData;
+
+        return imageService.queryByImageType(imageType);
+    }
+
+    /**
      * 分页查询
      *
-     * @param image 筛选条件
-     * @param pageRequest      分页对象
+     * @param image       筛选条件
+     * @param pageRequest 分页对象
      * @return 查询结果
      */
     @GetMapping

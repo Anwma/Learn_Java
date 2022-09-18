@@ -11,10 +11,40 @@
         <result property="istate" column="istate" jdbcType="INTEGER"/>
     </resultMap>
 
+    <!--    List<Image> queryByImageType(Image image);-->
+    <select id="queryByImageType" resultMap="ImageMap">
+        select
+        id, ititle, iurl, itype, imsg, istate
+        from image
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="ititle != null and ititle != ''">
+                and ititle = #{ititle}
+            </if>
+            <if test="iurl != null and iurl != ''">
+                and iurl = #{iurl}
+            </if>
+            <if test="itype != null and itype != ''">
+                and itype = #{itype}
+            </if>
+            <if test="imsg != null and imsg != ''">
+                and imsg = #{imsg}
+            </if>
+            <if test="istate != null">
+                and istate = #{istate}
+            </if>
+        </where>
+    </select>
     <!--查询单个-->
     <select id="queryById" resultMap="ImageMap">
-        select
-          id, ititle, iurl, itype, imsg, istate
+        select id,
+               ititle,
+               iurl,
+               itype,
+               imsg,
+               istate
         from image
         where id = #{id}
     </select>
@@ -22,7 +52,7 @@
     <!--查询指定行数据-->
     <select id="queryAllByLimit" resultMap="ImageMap">
         select
-          id, ititle, iurl, itype, imsg, istate
+        id, ititle, iurl, itype, imsg, istate
         from image
         <where>
             <if test="id != null">
@@ -83,7 +113,7 @@
         insert into image(ititle, iurl, itype, imsg, istate)
         values
         <foreach collection="entities" item="entity" separator=",">
-        (#{entity.ititle}, #{entity.iurl}, #{entity.itype}, #{entity.imsg}, #{entity.istate})
+            (#{entity.ititle}, #{entity.iurl}, #{entity.itype}, #{entity.imsg}, #{entity.istate})
         </foreach>
     </insert>
 
@@ -126,7 +156,9 @@
 
     <!--通过主键删除-->
     <delete id="deleteById">
-        delete from image where id = #{id}
+        delete
+        from image
+        where id = #{id}
     </delete>
 
 </mapper>

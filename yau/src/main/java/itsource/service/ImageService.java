@@ -1,6 +1,7 @@
 package itsource.service;
 
 import itsource.entity.Image;
+import itsource.utils.ResponseData;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 
@@ -11,7 +12,12 @@ import org.springframework.data.domain.PageRequest;
  * @since 2022-09-15 15:32:32
  */
 public interface ImageService {
-
+    /**
+     * 根据图片类型查询图片信息
+     * @param imageType 图片类型
+     * @return
+     */
+    ResponseData queryByImageType(String imageType);
     /**
      * 通过ID查询单条数据
      *

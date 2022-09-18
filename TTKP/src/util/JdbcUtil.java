@@ -22,7 +22,7 @@ public class JdbcUtil {
         return DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/test?serverTimezone=UTC",
                 "root",
-                "xxx"
+                "123456"
         );
     }
 

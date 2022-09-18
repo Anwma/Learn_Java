@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0944bbf7-c67a-4a09-884c-e12ca18fcbbe" name="变更" comment="">
+      <change beforePath="$PROJECT_DIR$/../TTKP/.idea/dataSources/461f0726-1cbd-407b-8e02-a82fb02d5175.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TTKP/.idea/dataSources/461f0726-1cbd-407b-8e02-a82fb02d5175.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TTKP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TTKP/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TTKP/src/util/JdbcUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TTKP/src/util/JdbcUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../YuanXiaoCha.7z" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yau/src/main/java/itsource/controller/ImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../yau/src/main/java/itsource/controller/ImageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yau/src/main/java/itsource/dao/ImageDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../yau/src/main/java/itsource/dao/ImageDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yau/src/main/java/itsource/service/ImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../yau/src/main/java/itsource/service/ImageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yau/src/main/java/itsource/service/impl/ImageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../yau/src/main/java/itsource/service/impl/ImageServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yau/src/main/resources/itsource/dao/ImageDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../yau/src/main/resources/itsource/dao/ImageDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yau/target/classes/itsource/controller/ImageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../yau/target/classes/itsource/controller/ImageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yau/target/classes/itsource/dao/ImageDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../yau/target/classes/itsource/dao/ImageDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yau/target/classes/itsource/dao/ImageDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../yau/target/classes/itsource/dao/ImageDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yau/target/classes/itsource/service/ImageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../yau/target/classes/itsource/service/ImageService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yau/target/classes/itsource/service/impl/ImageServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../yau/target/classes/itsource/service/impl/ImageServiceImpl.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2Evf5NhoRSNfTFKuKrQIBRvTqSV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="0944bbf7-c67a-4a09-884c-e12ca18fcbbe" name="变更" comment="" />
+      <created>1663480797382</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663480797382</updated>
+      <workItem from="1663480798675" duration="3000" />
+    </task>
+    <servers />
+  </component>
+</project>

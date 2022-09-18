@@ -80,16 +80,16 @@ public class GamePanel extends JPanel implements KeyListener {
         g.setFont(new Font("宋体", Font.BOLD, 16));
         g.drawString("HP:" + person.hp, 350, 85);
 
-        //4.绘制宠物
+        //5.绘制宠物
         pet.paintPet(g);
 
-        //5.绘制金币
+        //6.绘制金币
 //        gold.paintGole(g);
         for (int i = 0; i < golds.size(); i++) {
             golds.get(i).paintGole(g);
         }
 
-        //6.绘制导弹
+        //7.绘制导弹
 //        missile.paintMissile(g);
         for (int i = 0; i < missiles.size(); i++) {
             missiles.get(i).paintMissile(g);
@@ -131,8 +131,6 @@ public class GamePanel extends JPanel implements KeyListener {
             golds.add(gold);
         }
     }
-
-
     /**
      * 生成导弹的方法
      */

@@ -5,7 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4da649b5-f69d-4975-99ab-f645a73df3bd" name="变更" comment="22-09-03">
+      <change afterPath="$PROJECT_DIR$/../jdbctest/.idea/libraries/mysql_connector_java_8_0_21__2_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/461f0726-1cbd-407b-8e02-a82fb02d5175.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/461f0726-1cbd-407b-8e02-a82fb02d5175.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TTKP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TTKP.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TTKP/util/JdbcUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TTKP/util/JdbcUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TTKP/view/LoadView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TTKP/view/LoadView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/JdbcUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/JdbcUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/LoadView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/LoadView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../YuanXiaoCha.7z" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbctest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbctest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbctest/jdbctest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbctest/jdbctest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yau/src/main/java/itsource/controller/ImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../yau/src/main/java/itsource/controller/ImageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yau/src/main/java/itsource/dao/ImageDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../yau/src/main/java/itsource/dao/ImageDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yau/src/main/java/itsource/service/ImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../yau/src/main/java/itsource/service/ImageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yau/src/main/java/itsource/service/impl/ImageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../yau/src/main/java/itsource/service/impl/ImageServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yau/src/main/resources/itsource/dao/ImageDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../yau/src/main/resources/itsource/dao/ImageDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yau/target/classes/itsource/controller/ImageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../yau/target/classes/itsource/controller/ImageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yau/target/classes/itsource/dao/ImageDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../yau/target/classes/itsource/dao/ImageDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yau/target/classes/itsource/dao/ImageDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../yau/target/classes/itsource/dao/ImageDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yau/target/classes/itsource/service/ImageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../yau/target/classes/itsource/service/ImageService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yau/target/classes/itsource/service/impl/ImageServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../yau/target/classes/itsource/service/impl/ImageServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,41 +53,43 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/ProgramData/Doc/企业实训/学习材料/第二周/22-09-08/Doc/ttkp_yanan",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/JetbrainsCode/Learn_Java/TTKP&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JetbrainsCode\Learn_Java\TTKP\lib" />
       <recent name="D:\JetbrainsCode\Learn_Java\TTKP\src\view" />
       <recent name="D:\JetbrainsCode\Learn_Java\TTKP\src\util" />
       <recent name="D:\JetbrainsCode\Learn_Java\TTKP\src\service\impl" />
       <recent name="D:\JetbrainsCode\Learn_Java\TTKP\src\service" />
-      <recent name="D:\JetbrainsCode\Learn_Java\TTKP\src\dao" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JetbrainsCode\Learn_Java\TTKP\lib" />
+      <recent name="D:\JetbrainsCode\Learn_Java\TTKP" />
       <recent name="D:\JetbrainsCode\Learn_Java\TTKP\src" />
       <recent name="D:\JetbrainsCode\Learn_Java\TTKP\sound" />
-      <recent name="D:\JetbrainsCode\Learn_Java\TTKP\lib" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.RegisterView">
+  <component name="RunManager" selected="应用程序.GameView">
     <configuration name="GameView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="view.GameView" />
       <module name="TTKP" />
@@ -134,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.RegisterView" />
-        <item itemvalue="应用程序.LoginView" />
         <item itemvalue="应用程序.GameView" />
         <item itemvalue="应用程序.LoadView" />
         <item itemvalue="应用程序.MenuView" />
+        <item itemvalue="应用程序.RegisterView" />
+        <item itemvalue="应用程序.LoginView" />
       </list>
     </recent_temporary>
   </component>
@@ -162,6 +185,15 @@
       <workItem from="1662723025204" duration="1271000" />
       <workItem from="1662725007996" duration="16000" />
       <workItem from="1663049642418" duration="40000" />
+      <workItem from="1663231955092" duration="589000" />
+      <workItem from="1663250970588" duration="290000" />
+      <workItem from="1663407274906" duration="1539000" />
+      <workItem from="1663419241814" duration="3257000" />
+      <workItem from="1663465911738" duration="2004000" />
+      <workItem from="1663477247212" duration="1085000" />
+      <workItem from="1663481370746" duration="626000" />
+      <workItem from="1663482547036" duration="1213000" />
+      <workItem from="1663488244944" duration="1815000" />
     </task>
     <task id="LOCAL-00001" summary="22-09-03">
       <created>1662172252519</created>
