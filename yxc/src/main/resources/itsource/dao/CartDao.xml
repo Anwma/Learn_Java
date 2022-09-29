@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="itsource.dao.CartDao">
+
+    <resultMap type="itsource.entity.Cart" id="CartMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="uid" column="uid" jdbcType="INTEGER"/>
+        <result property="pid" column="pid" jdbcType="INTEGER"/>
+        <result property="number" column="number" jdbcType="INTEGER"/>
+        <result property="tprice" column="tprice" jdbcType="VARCHAR"/>
+    </resultMap>
+    <resultMap type="itsource.entity.Cart" id="CartMap1">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="uid" column="uid" jdbcType="INTEGER"/>
+        <result property="pid" column="pid" jdbcType="INTEGER"/>
+        <result property="number" column="number" jdbcType="INTEGER"/>
+        <result property="tprice" column="tprice" jdbcType="NUMERIC"/>
+
+        <result property="product.id" column="ppid"/>
+        <result property="product.pname" column="pname"/>
+        <result property="product.typeid" column="typeid"/>
+        <result property="product.tprice" column="tprice"/>
+        <result property="product.tintroduce" column="tintroduce"/>
+        <result property="product.pimageurl" column="pimageurl"/>
+        <result property="product.photstate" column="photstate"/>
+        <result property="product.pdiscount" column="pdiscount"/>
+        <result property="product.pstate" column="pstate"/>
+    </resultMap>
+
+    <!--根据用户id（uid）清除购物车数据 -清空购物车-->
+    <!--void deleteCartByUid(Long uid);-->
+    <delete id="deleteCartByUid">
+        DELETE
+        FROM cart
+        WHERE uid = #{uid}
+    </delete>
+
+    <!--根据购物车id和用户id删除购物车商品信息-->
+    <!--void deleteCart(@Param("id") Long id,@Param("uid") Long uid);-->
+    <delete id="deleteCart">
+        DELETE
+        FROM cart
+        WHERE id = #{id}
+          AND uid = #{uid}
+    </delete>
+
+
+    <!--根据用户id获取购物车商品信息-->
+    <!--List<Cart> queryCartByUid(Long id);-->
+    <select id="queryCartByUid" resultMap="CartMap1">
+        SELECT c.id         id,
+               c.uid        uid,
+               c.pid        pid,
+               c.number     number,
+               c.tprice     tprice,
+
+               p.id         ppid,
+               p.pname      pname,
+               p.typeid     typeid,
+               p.tprice     tprice,
+               p.tintroduce tintroduce,
+               p.pimageurl  pimageurl,
+               p.photstate  photstate,
+               p.pdiscount  pdiscount,
+               p.pstate     pstate
+
+        FROM `cart` c,
+             product p
+        WHERE c.pid = p.id
+          AND uid = #{uid}
+    </select>
+
+
+    <!--根据传入的用户id(uid)和商品id(pid)进行查询(购物车表)-->
+    <!--Long queryCount(@Param("uid") Long uid,@Param("pid") Long pid);-->
+    <select id="queryCount" resultType="java.lang.Long">
+        SELECT COUNT(id)
+        FROM cart
+        WHERE uid = #{uid}
+          AND pid = #{pid}
+    </select>
+    <!--查询单个-->
+    <select id="queryById" resultMap="CartMap">
+        select
+          id, uid, pid, number, tprice
+        from cart
+        where id = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="CartMap">
+        select
+          id, uid, pid, number, tprice
+        from cart
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="uid != null">
+                and uid = #{uid}
+            </if>
+            <if test="pid != null">
+                and pid = #{pid}
+            </if>
+            <if test="number != null">
+                and number = #{number}
+            </if>
+            <if test="tprice != null and tprice != ''">
+                and tprice = #{tprice}
+            </if>
+        </where>
+        limit #{pageable.offset}, #{pageable.pageSize}
+    </select>
+
+    <!--统计总行数-->
+    <select id="count" resultType="java.lang.Long">
+        select count(1)
+        from cart
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="uid != null">
+                and uid = #{uid}
+            </if>
+            <if test="pid != null">
+                and pid = #{pid}
+            </if>
+            <if test="number != null">
+                and number = #{number}
+            </if>
+            <if test="tprice != null and tprice != ''">
+                and tprice = #{tprice}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into cart(uid, pid, number, tprice)
+        values (#{uid}, #{pid}, #{number}, #{tprice})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="id" useGeneratedKeys="true">
+        insert into cart(uid, pid, number, tprice)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+        (#{entity.uid}, #{entity.pid}, #{entity.number}, #{entity.tprice})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="id" useGeneratedKeys="true">
+        insert into cart(uid, pid, number, tprice)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.uid}, #{entity.pid}, #{entity.number}, #{entity.tprice})
+        </foreach>
+        on duplicate key update
+        uid = values(uid),
+        pid = values(pid),
+        number = values(number),
+        tprice = values(tprice)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update cart
+        <set>
+            <if test="uid != null">
+                uid = #{uid},
+            </if>
+            <if test="pid != null">
+                pid = #{pid},
+            </if>
+            <if test="number != null">
+                number = #{number},
+            </if>
+            <if test="tprice != null and tprice != ''">
+                tprice = #{tprice},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from cart where id = #{id}
+    </delete>
+
+</mapper>
+

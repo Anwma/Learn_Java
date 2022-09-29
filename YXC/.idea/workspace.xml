@@ -1,21 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0944bbf7-c67a-4a09-884c-e12ca18fcbbe" name="变更" comment="">
-      <change beforePath="$PROJECT_DIR$/../TTKP/.idea/dataSources/461f0726-1cbd-407b-8e02-a82fb02d5175.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TTKP/.idea/dataSources/461f0726-1cbd-407b-8e02-a82fb02d5175.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TTKP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TTKP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TTKP/src/util/JdbcUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TTKP/src/util/JdbcUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../YuanXiaoCha.7z" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../yau/src/main/java/itsource/controller/ImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../yau/src/main/java/itsource/controller/ImageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../yau/src/main/java/itsource/dao/ImageDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../yau/src/main/java/itsource/dao/ImageDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../yau/src/main/java/itsource/service/ImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../yau/src/main/java/itsource/service/ImageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../yau/src/main/java/itsource/service/impl/ImageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../yau/src/main/java/itsource/service/impl/ImageServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../yau/src/main/resources/itsource/dao/ImageDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../yau/src/main/resources/itsource/dao/ImageDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../yau/target/classes/itsource/controller/ImageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../yau/target/classes/itsource/controller/ImageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../yau/target/classes/itsource/dao/ImageDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../yau/target/classes/itsource/dao/ImageDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../yau/target/classes/itsource/dao/ImageDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../yau/target/classes/itsource/dao/ImageDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../yau/target/classes/itsource/service/ImageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../yau/target/classes/itsource/service/ImageService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../yau/target/classes/itsource/service/impl/ImageServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../yau/target/classes/itsource/service/impl/ImageServiceImpl.class" afterDir="false" />
+    <list default="true" id="12f71664-88ec-4e32-af43-4437c61ef50e" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/easyCodeTableSetting.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/YmApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/config/Swagger2Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/controller/CartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/controller/ImageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/controller/ProductorderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/controller/TypeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/dao/CartDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/dao/ImageDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/dao/OrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/dao/ProductDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/dao/ProductorderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/dao/TypeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/entity/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/entity/Image.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/entity/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/entity/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/entity/Productorder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/entity/Type.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/service/CartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/service/ImageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/service/ProductorderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/service/TypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/service/impl/CartServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/service/impl/ImageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/service/impl/ProductorderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/service/impl/TypeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/utils/ResponseCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itsource/utils/ResponseData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/itsource/dao/CartDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/itsource/dao/ImageDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/itsource/dao/OrderDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/itsource/dao/ProductDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/itsource/dao/ProductorderDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/itsource/dao/TypeDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/itsource/dao/UserDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/i1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/i2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/i3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/i4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/p1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/p10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/p11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/p12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/p13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/p14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/p2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/p3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/p4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/p5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/p6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/p7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/p8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/p9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/pb1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/pb2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/pb3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/t1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/t2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/t3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/t4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/t5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/t6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/w1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/w2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/w3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/w4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/w5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,31 +101,133 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="2Evf5NhoRSNfTFKuKrQIBRvTqSV" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="qpgbbvu5" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="alwaysUpdateSnapshots" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2FDxLNY3XWRkTtZbNKcNUrSdBGp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/JetbrainsCode/Learn_Java/yinshipin",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "34475d2aa46910d5bd542237219fda71",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JetbrainsCode\Learn_Java\yxc\src\main\resources\itsource\dao" />
+      <recent name="D:\JetbrainsCode\Learn_Java\yxc\src\main\webapp" />
+      <recent name="D:\JetbrainsCode\Learn_Java\yxc\src\main\resources" />
+      <recent name="D:\JetbrainsCode\Learn_Java\yxc\src\main\java\itsource" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="itsource" />
+      <recent name="itsource.config" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="YmApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="yxc" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="itsource.YmApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="itsource.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.YmApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
-      <changelist id="0944bbf7-c67a-4a09-884c-e12ca18fcbbe" name="变更" comment="" />
-      <created>1663480797382</created>
+      <changelist id="12f71664-88ec-4e32-af43-4437c61ef50e" name="变更" comment="" />
+      <created>1664040398904</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1663480797382</updated>
-      <workItem from="1663480798675" duration="3000" />
+      <updated>1664040398904</updated>
+      <workItem from="1664040400302" duration="1847000" />
+      <workItem from="1664066356651" duration="5520000" />
+      <workItem from="1664099963629" duration="2749000" />
+      <workItem from="1664121219719" duration="2877000" />
+      <workItem from="1664125023463" duration="2308000" />
+      <workItem from="1664128698099" duration="1350000" />
+      <workItem from="1664130126327" duration="235000" />
+      <workItem from="1664130379468" duration="829000" />
+      <workItem from="1664151399237" duration="4629000" />
+      <workItem from="1664156057653" duration="5111000" />
+      <workItem from="1664178156711" duration="154000" />
+      <workItem from="1664178333925" duration="1077000" />
+      <workItem from="1664323674592" duration="3074000" />
+      <workItem from="1664379338909" duration="85000" />
+      <workItem from="1664414652529" duration="776000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

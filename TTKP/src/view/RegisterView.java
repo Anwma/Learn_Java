@@ -79,7 +79,7 @@ public class RegisterView extends JFrame implements ActionListener {
 
         //3.设置背景音乐
 //        BackMusic backMusic = new BackMusic("sound/game.wav");
-        new MyAudioPlayer("sound/game.wav").play();
+//        new MyAudioPlayer("sound/game.wav").play();
 //        new Mic("sound/game.mp3");//播放.mp3格式的音乐
 
         //2.设置背景图

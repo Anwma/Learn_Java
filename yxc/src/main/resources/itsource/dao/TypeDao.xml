@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="itsource.dao.TypeDao">
+
+    <resultMap type="itsource.entity.Type" id="TypeMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="typename" column="typename" jdbcType="VARCHAR"/>
+        <result property="timageurl" column="timageurl" jdbcType="VARCHAR"/>
+        <result property="tstate" column="tstate" jdbcType="INTEGER"/>
+    </resultMap>
+
+
+    <!--获取所有分类信息-->
+    <!--List<Type> queryAll(Type type);-->
+    <select id="queryAll" resultMap="TypeMap">
+        select
+        id, typename, timageurl, tstate
+        from type
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="typename != null and typename != ''">
+                and typename = #{typename}
+            </if>
+            <if test="timageurl != null and timageurl != ''">
+                and timageurl = #{timageurl}
+            </if>
+            <if test="tstate != null">
+                and tstate = #{tstate}
+            </if>
+        </where>
+    </select>
+    <!--查询单个-->
+    <select id="queryById" resultMap="TypeMap">
+        select
+          id, typename, timageurl, tstate
+        from type
+        where id = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="TypeMap">
+        select
+          id, typename, timageurl, tstate
+        from type
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="typename != null and typename != ''">
+                and typename = #{typename}
+            </if>
+            <if test="timageurl != null and timageurl != ''">
+                and timageurl = #{timageurl}
+            </if>
+            <if test="tstate != null">
+                and tstate = #{tstate}
+            </if>
+        </where>
+        limit #{pageable.offset}, #{pageable.pageSize}
+    </select>
+
+    <!--统计总行数-->
+    <select id="count" resultType="java.lang.Long">
+        select count(1)
+        from type
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="typename != null and typename != ''">
+                and typename = #{typename}
+            </if>
+            <if test="timageurl != null and timageurl != ''">
+                and timageurl = #{timageurl}
+            </if>
+            <if test="tstate != null">
+                and tstate = #{tstate}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into type(typename, timageurl, tstate)
+        values (#{typename}, #{timageurl}, #{tstate})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="id" useGeneratedKeys="true">
+        insert into type(typename, timageurl, tstate)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+        (#{entity.typename}, #{entity.timageurl}, #{entity.tstate})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="id" useGeneratedKeys="true">
+        insert into type(typename, timageurl, tstate)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.typename}, #{entity.timageurl}, #{entity.tstate})
+        </foreach>
+        on duplicate key update
+        typename = values(typename),
+        timageurl = values(timageurl),
+        tstate = values(tstate)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update type
+        <set>
+            <if test="typename != null and typename != ''">
+                typename = #{typename},
+            </if>
+            <if test="timageurl != null and timageurl != ''">
+                timageurl = #{timageurl},
+            </if>
+            <if test="tstate != null">
+                tstate = #{tstate},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from type where id = #{id}
+    </delete>
+
+</mapper>
+
